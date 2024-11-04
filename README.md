@@ -7,7 +7,7 @@ Oppilasrekisteri. Tämä rekisteri sisältää oppilaiden tietoja, kuten nimen, 
 
 lista (14 tiedostoa): 
 
-Projektipäällikkö: Ilari yuffic101, Varmistaa että tiedostot ja niissä olevat tiedot toimivat yhteen. Projekti toimii kokonaisuudessaan. Esim. lomakkeilla käytetyt inputit vastaavat toisiaan. Tietokantaan tulee syötettä. Yhteydenpito muihin tiimiläisiin (esim. teams tai wilma-viestit). Varmistaa että kaikki tekevät omat työnsä. Päivän päätteeksi raportti opettajalle Wilman kautta.
+Projektipäällikkö: Ilari yuffic101, Varmistaa että tiedostot ja niissä olevat tiedot toimivat yhteen. Projekti toimii kokonaisuudessaan. Esim. lomakkeilla käytetyt inputit vastaavat toisiaan. Tietokantaan tulee oikea syöte (kentät oikein). Yhteydenpito muihin tiimiläisiin (esim. teams tai wilma-viestit). Varmistaa että kaikki tekevät omat työnsä. Päivän päätteeksi raportti opettajalle Wilman kautta.
 
 **db_connection.php ja config.php ** Roope		MasiBallin
 
