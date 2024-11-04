@@ -9,6 +9,10 @@ lista (14 tiedostoa):
 
 Projektipäällikkö: Ilari yuffic101, Varmistaa että tiedostot ja niissä olevat tiedot toimivat yhteen. Projekti toimii kokonaisuudessaan. Esim. lomakkeilla käytetyt inputit vastaavat toisiaan. Tietokantaan tulee oikea syöte (kentät oikein). Yhteydenpito muihin tiimiläisiin (esim. teams tai wilma-viestit). Varmistaa että kaikki tekevät omat työnsä. Päivän päätteeksi raportti opettajalle Wilman kautta.
 
+Testaaja: Aapo (Github-tili?
+Aapo on testaaja. Eli Aapo testaa päivän mittaan että koodi on toimivaa ja ei sisällä virheitä. Aapo testaa päivän päätteksi kokonaisuuden toimivuuden Ilarin kanssa. Palauta ohjelmiston testausraportin opettajalle Wilman kautta, jossa on eri tiedostojen nimet ja mitä testejä niille on tehty ja miten tiedosto niissä toimi.
+
+
 **db_connection.php ja config.php ** Roope		MasiBallin
 
 Tehtävänanto: Luo tietokantayhteys, jota muut tiedostot käyttävät. Tämä tiedosto tarkistaa yhteyden onnistumisen ja antaa virheilmoituksen, jos yhteys epäonnistuu. Määrittele tietokantayhteyden asetukset, kuten palvelin, käyttäjätunnus, salasana ja tietokannan nimi. Tämä tiedosto sisältää vain nämä asetukset, jotta tietokantatiedot on helppo päivittää yhdestä paikasta. 
