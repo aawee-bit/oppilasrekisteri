@@ -69,4 +69,11 @@ display_message($message, $type) – Näyttää tietyn tyyppisen viestin (esim. 
 
 Tehtävänanto: Luo pääsivu, jossa on yhteenveto CRUD-toiminnoista. Pääsivulla voi olla linkit oppilasrekisterin lukemiseen, uuden oppilaan lisäämiseen sekä oppilastietojen muokkaamiseen ja poistamiseen. 
 
+
+
+
+
+
+
+
  
