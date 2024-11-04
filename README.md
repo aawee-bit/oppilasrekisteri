@@ -7,6 +7,8 @@ Oppilasrekisteri. Tämä rekisteri sisältää oppilaiden tietoja, kuten nimen, 
 
 lista (14 tiedostoa): 
 
+Projektipäällikkö: Ilari yuffic101, Varmistaa että tiedostot ja niissä olevat tiedot toimivat yhteen. Projekti toimii kokonaisuudessaan. Esim. lomakkeilla käytetyt inputit vastaavat toisiaan. Yhteydenpito muihin tiimiläisiin. Varmistaa että kaikki tekevät omat työnsä.
+
 **db_connection.php ja config.php ** Roope		MasiBallin
 
 Tehtävänanto: Luo tietokantayhteys, jota muut tiedostot käyttävät. Tämä tiedosto tarkistaa yhteyden onnistumisen ja antaa virheilmoituksen, jos yhteys epäonnistuu. Määrittele tietokantayhteyden asetukset, kuten palvelin, käyttäjätunnus, salasana ja tietokannan nimi. Tämä tiedosto sisältää vain nämä asetukset, jotta tietokantatiedot on helppo päivittää yhdestä paikasta. 
@@ -101,5 +103,6 @@ Aatu
 Roope		MasiBallin
 Eetu		Veetinmies
 Hakan		Khanistania
+Ilari yuffic101
 
  
