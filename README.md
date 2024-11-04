@@ -71,6 +71,22 @@ Tehtävänanto: Luo pääsivu, jossa on yhteenveto CRUD-toiminnoista. Pääsivul
 
 
 
+SQL
+
+-- Luodaan tietokanta oppilasrekisteri, jos sitä ei vielä ole olemassa
+CREATE DATABASE IF NOT EXISTS oppilasrekisteri;
+
+-- Valitaan tietokanta
+USE oppilasrekisteri;
+
+-- Luodaan oppilaat-taulu
+CREATE TABLE IF NOT EXISTS oppilaat (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nimi VARCHAR(100) NOT NULL,
+    sahkoposti VARCHAR(100) NOT NULL UNIQUE,
+    luokka VARCHAR(50) NOT NULL
+);
+
 
 
 
