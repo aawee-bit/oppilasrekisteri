@@ -84,6 +84,20 @@ CREATE TABLE IF NOT EXISTS oppilaat (
 
 
 
-
+Tuukka		Tolloviis
+Toivo		Soapyballer
+Elia 		eskarinkakara
+Jessica 	Jekaxi
+Ilari
+Sasha
+Kristian	TyrForge
+Zamary		zikzak16
+Veeti		Eetunvaimo
+Jasu		sw0w
+Jyri		TwigRaainb
+Aatu
+Roope		MasiBallin
+Eetu		Veetinmies
+Hakan		Khanistania
 
  
