@@ -7,13 +7,9 @@ Oppilasrekisteri. Tämä rekisteri sisältää oppilaiden tietoja, kuten nimen, 
 
 lista (14 tiedostoa): 
 
-**db_connection.php **
+**db_connection.php ja config.php **
 
-Tehtävänanto: Luo tietokantayhteys, jota muut tiedostot käyttävät. Tämä tiedosto tarkistaa yhteyden onnistumisen ja antaa virheilmoituksen, jos yhteys epäonnistuu. 
-
-**config.php **
-
-Tehtävänanto: Määrittele tietokantayhteyden asetukset, kuten palvelin, käyttäjätunnus, salasana ja tietokannan nimi. Tämä tiedosto sisältää vain nämä asetukset, jotta tietokantatiedot on helppo päivittää yhdestä paikasta. 
+Tehtävänanto: Luo tietokantayhteys, jota muut tiedostot käyttävät. Tämä tiedosto tarkistaa yhteyden onnistumisen ja antaa virheilmoituksen, jos yhteys epäonnistuu. Määrittele tietokantayhteyden asetukset, kuten palvelin, käyttäjätunnus, salasana ja tietokannan nimi. Tämä tiedosto sisältää vain nämä asetukset, jotta tietokantatiedot on helppo päivittää yhdestä paikasta. 
 
 **header.php **
 
