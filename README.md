@@ -27,15 +27,9 @@ Tehtävänanto: Käsittele create_form.php-lomakkeesta lähetetyt tiedot ja lis�
 **
 Tehtävänanto: Hae kaikki oppilastiedot tietokannasta ja näytä ne taulukossa. Käytä sarakkeita, kuten "Nimi", "Sähköposti" ja "Luokka". Taulukon jokainen rivi tulee sisältää linkit tietojen muokkaamiseen ja poistamiseen. 
 
-**update_form.php **
+**update_form.php/edit_record.php **
 
-Tehtävänanto: Tee lomake, jolla voidaan päivittää valitun oppilaan tietoja. Lomakkeessa on valmiiksi täytetyt tiedot (nimi, sähköposti ja luokka), jotka käyttäjä voi muuttaa. 
-
-**edit_record.php **
-
-Tehtävänanto: Hae muokattavan oppilaan tiedot tietokannasta ja näytä ne update_form.php 
-
-. Tämä tiedosto toimii linkkinä lomakkeen ja tietokannan välillä. 
+Tehtävänanto: Tee lomake, jolla voidaan päivittää valitun oppilaan tietoja. Lomakkeessa on valmiiksi täytetyt tiedot (nimi, sähköposti ja luokka), jotka käyttäjä voi muuttaa. Hae muokattavan oppilaan tiedot tietokannasta ja näytä ne update_form.php. Voi yhdistää yhdeksi tiedostoksi. 
 
 **update_record.php **
 
