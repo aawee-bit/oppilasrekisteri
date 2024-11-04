@@ -11,13 +11,9 @@ lista (14 tiedostoa):
 
 Tehtävänanto: Luo tietokantayhteys, jota muut tiedostot käyttävät. Tämä tiedosto tarkistaa yhteyden onnistumisen ja antaa virheilmoituksen, jos yhteys epäonnistuu. Määrittele tietokantayhteyden asetukset, kuten palvelin, käyttäjätunnus, salasana ja tietokannan nimi. Tämä tiedosto sisältää vain nämä asetukset, jotta tietokantatiedot on helppo päivittää yhdestä paikasta. 
 
-**header.php **
+**header.php ja footer.php **
 
-Tehtävänanto: Luo sivuston yläosa, jossa on navigointivalikko. Valikossa tulee olla linkit "Oppilasrekisteri", "Lisää oppilas" ja "Hallinnoi tietoja". 
-
-**footer.php **
-
-Tehtävänanto: Lisää sivustolle alatunniste. Voit lisätä tähän esimerkiksi tekijänoikeustiedot tai oman nimesi sekä päivämäärän, jolloin työ on luotu. 
+Tehtävänanto: Luo sivuston yläosa, jossa on navigointivalikko. Valikossa tulee olla linkit "Oppilasrekisteri", "Lisää oppilas" ja "Hallinnoi tietoja". Lisää footer-sivustolle alatunniste. Voit lisätä tähän esimerkiksi tekijänoikeustiedot tai oman nimesi sekä päivämäärän, jolloin työ on luotu. 
 
 **create_form.php **
 
