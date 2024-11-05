@@ -1,9 +1,8 @@
 <nav class="header">
 
-    <a href="#">Oppilasrekisteri</a>
-    <a href="#">Lisää Oppilas</a>
-    <a href="#">Hallinnoi tilejä</a>
-
-    <!-- Vaihtakaa "#" sitte oikeisii file nimiin -->
+    <a href="read_record.php">Oppilasrekisteri</a>
+    <a href="create_form.php">Lisää Oppilas</a>
+    <a href="update_record">Hallinnoi tilejä</a>
+    <a href="delete_record.php">Poista tilejä</a>
 
 </nav>
