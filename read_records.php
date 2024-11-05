@@ -1,6 +1,6 @@
 <?php
 $host = 'localhost';
-$dbname = 'testi';
+$dbname = 'oppilasrekisteri';
 $username = 'root';              
 $password = 'root';              // Jos Xampilla niin jätä tyhjäksi
 
