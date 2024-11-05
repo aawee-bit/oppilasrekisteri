@@ -6,12 +6,17 @@
     <title>Oppilasrekisteri</title>
 </head>
 <body>
+    <h1>Oppilasrekisteri</h1>
+
+    <header>
     <nav class="header">
 
-    <a href="oppilasrekisteri.sql">Oppilasrekisteri</a>
-    <a href="db_connection.php">Lisää Oppilas</a>
-    <a href="handle_form.php">Hallinnoi tilejä</a>
-    <!-- Vaihtakaa "#" sitte oikeisii file nimiin -->
-    </nav>
+    <a href="read_record.php">Oppilasrekisteri</a>
+    <a href="create_form.php">Lisää Oppilas</a>
+    <a href="update_record.php">Hallinnoi tilejä</a>
+    <a href="delete_record.php">Poista tilejä</a>
+
+</nav>
+    </header>
 </body>
 </html>
