@@ -21,7 +21,7 @@ Tehtävänanto: Luo tietokantayhteys, jota muut tiedostot käyttävät. Tämä t
 
 Tehtävänanto: Luo sivuston yläosa, jossa on navigointivalikko. Valikossa tulee olla linkit "Oppilasrekisteri", "Lisää oppilas" ja "Hallinnoi tietoja". Lisää footer-sivustolle alatunniste. Voit lisätä tähän esimerkiksi tekijänoikeustiedot tai oman nimesi sekä päivämäärän, jolloin työ on luotu. 
 
-**create_form.php ** Veeti		Eetunvaimo
+**create_form.php ** Veeti		Eetunvaimo    PUUTTUU
 
 Tehtävänanto: Tee lomake uuden oppilaan lisäämiseksi rekisteriin. Lomakkeessa tulee olla kentät nimelle, sähköpostiosoitteelle ja luokalle. 
 
