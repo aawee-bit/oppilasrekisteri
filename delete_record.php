@@ -1,14 +1,6 @@
 <?php
-$dbServername = "localhost";
-$dbUsername = "root";
-$dbPassword = "root";
-$dbName = "oppilasrekisteri";
 
-$conn = new mysqli($dbServername, $dbUsername, $dbPassword, $dbName);
-
-if ($conn->connect_error) {
-    die("Yhteyden muodostaminen epäonnistui: " . $conn->connect_error);
-}
+include "db_connection.php";
 
 $sql = "SELECT id, nimi FROM oppilaat";
 $result = $conn->query($sql);
