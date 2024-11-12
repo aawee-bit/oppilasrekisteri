@@ -2,9 +2,10 @@
 $host = 'localhost';
 $dbname = 'oppilasrekisteri';
 $username = 'root';              
-$password = 'root';              // Jos Xampilla niin jätä tyhjäksi
+$password = '';              // Jos Xampilla niin jätä tyhjäksi, uWampilla "root"
 
 $conn = new mysqli($host, $username, $password, $dbname);
+$conn->set_charset('utf8mb4');
 
 // Kokeillaan connection
 if ($conn->connect_error) {
@@ -26,6 +27,7 @@ if ($result === false) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taulukko</title>
+    <link rel="stylesheet" href="style.css">
     <style>
         table {
             width: 100%;
@@ -49,7 +51,7 @@ if ($result === false) {
 </head>
 
 <body>
-<h2>Taulukko</h2>
+<h2>Oppilastiedot</h2>
 <table>
     <tr>
         <th>Nimi</th>
@@ -62,7 +64,7 @@ if ($result === false) {
             echo "<tr>";
 
             echo "<td>" . htmlspecialchars($row['nimi']) .
-            "<a class='edit' href='update_form.php?id=" . urlencode($row['id']) . "&field=nimi'>Muokkaa</a></td>";
+            "<a class='edit' href='updateform.php?id=" . urlencode($row['id']) . "&field=nimi'>Muokkaa</a></td>";
 
             echo "<td>" . htmlspecialchars($row['sahkoposti']) . "</td>";
             echo "<td>" . htmlspecialchars($row['luokka']) . "</td>";
