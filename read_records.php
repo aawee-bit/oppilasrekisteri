@@ -25,30 +25,14 @@ if ($result === false) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taulukko</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        table, th, td {
-            border: 1px solid black;
-        }
-        th, td {
-            padding: 8px;
-            text-align: left;
-        }
-        th {
-            background-color: #f2f2f2;
-        }
-        .edit {
-            margin-left: 10px;
-            font-size: 0.9em;
-        }
-    </style>
 </head>
 
 <body>
 <h2>Oppilastiedot</h2>
+<header>
+    <?php include "header.php"?>
+    <?php include "footer.php"?>
+    </header>
 <table>
     <tr>
         <th>Nimi</th>
