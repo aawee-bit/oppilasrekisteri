@@ -1,8 +1,8 @@
 <?php
 $servername = "localhost";
 $username = "root";
-$password = "";
-$dbname = "oppilaat";
+$password = "root";
+$dbname = "oppilasrekisteri";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
@@ -33,6 +33,7 @@ $conn->close();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lisää uusi oppilas</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -49,6 +50,9 @@ $conn->close();
         <input type="text" id="luokka" name="luokka" required><br><br>
 
         <input type="submit" value="Lisää oppilas">
+    </form>
+    <form action="index.php" method="GET">
+        <button type="submit">Takaisin</button>
     </form>
 
 </body>

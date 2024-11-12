@@ -1,3 +1,36 @@
+<?php
+$dbServername = "localhost";
+$dbUsername = "root";
+$dbPassword = "root";
+$dbName = "oppilasrekisteri";
+
+$conn = new mysqli($dbServername, $dbUsername, $dbPassword, $dbName);
+
+if ($conn->connect_error) {
+    die("Yhteyden muodostaminen epäonnistui: " . $conn->connect_error);
+}
+
+if (isset($_GET['id']) && isset($_POST['vahvistus']) && $_POST['vahvistus'] == 'joo') {
+    $id = $_GET['id'];
+
+    $sql = "DELETE FROM oppilaat WHERE id = ?";
+    if ($stmt = $conn->prepare($sql)) {
+        $stmt->bind_param("i", $id);
+        if ($stmt->execute()) {
+            echo "<p style='color: green;'>Oppilas poistettu!</p>";
+            header("Location: index.php");
+            exit(); 
+        } else {
+            echo "<p style='color: red;'>Virhe poistettaessa oppilasta: " . $stmt->error . "</p>";
+        }
+        $stmt->close();
+    } else {
+        echo "<p style='color: red;'>Virhe valmisteltaessa poistoa: " . $conn->error . "</p>";
+    }
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="fi">
 <head>
@@ -6,30 +39,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<?php
-if (!isset($_GET['id'])) {
-    echo 'ID:tä ei ole annettu.';
-    exit;
-}
-$id = $_GET['id'];
-
-if (isset($_POST['vahvistus'])) {
-    if ($_POST['vahvistus'] == "joo") {
-        header('Location:delete_record.php?id=' . $id);
-    }
-    if ($_POST['vahvistus'] == "ei") {
-        echo 'Poisto peruttu.';
-        echo '<a href="read_records.php"><button>Takaisin oppilas listaan</button></a>';
-        exit;
-    }
-}
-?>
-
     <h2>Oletko varma, että haluat poistaa oppilaan tietokannasta?</h2>
     <form method="POST">
         <button type="submit" name="vahvistus" value="joo">Kyllä</button>
-        <button type="submit" name="vahvistus" value="ei">Peruuta</button>
+    </form>
+    <form action="index.php" method="GET">
+        <button type="submit">Peruuta</button>
     </form>
 </body>
 </html>

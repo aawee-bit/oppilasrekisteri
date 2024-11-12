@@ -1,25 +1,46 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "root";
-$dbname = "oppilasrekisteri";
+$dbServername = "localhost";
+$dbUsername = "root";
+$dbPassword = "root";
+$dbName = "oppilasrekisteri";
 
-$conn = new mysqli($servername, $username, $password, $dbname);
+$conn = new mysqli($dbServername, $dbUsername, $dbPassword, $dbName);
 
 if ($conn->connect_error) {
-    die("Yhteys epäonnistui: ". $conn->connect_error);
+    die("Yhteyden muodostaminen epäonnistui: " . $conn->connect_error);
 }
 
-if (isset($_POST['delete'])) {
-    $delete = $_POST['id'];
-    $sql = mysqli_query($conn, "DELETE FROM oppilaat WHERE id = '$delete'");
-}
+$sql = "SELECT id, nimi FROM oppilaat";
+$result = $conn->query($sql);
 
-if ($conn->query($sql) === TRUE) {
-    echo "Oppilas poistettu";
-} else {
-    echo "Ongelma tapahtui: " . $conn->error;
-}
+?>
 
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <title>Oppilaslista</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Oppilaslista</h1>
+    <ul>
+        <?php
+        if ($result->num_rows > 0) {
+            while($row = $result->fetch_assoc()) {
+                echo "<li>" . htmlspecialchars($row['nimi']) . " ";
+                echo "<a href='delete_confirm.php?id=" . $row['id'] . "'>Poista</a>";
+                echo "<li>";
+            }
+        } else {
+            echo "Ei oppilaita tietokannassa.";
+        }
+        ?>
+    </ul>
+
+</body>
+</html>
+
+<?php
 $conn->close();
 ?>
