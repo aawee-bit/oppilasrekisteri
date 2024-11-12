@@ -1,10 +1,5 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "root";
-$dbname = "oppilasrekisteri";
-
-$conn = new mysqli($servername, $username, $password, $dbname);
+include "config.php";
 
 if ($conn->connect_error) {
     die("Yhteyden muodostaminen epäonnistui: " . $conn->connect_error);
@@ -38,8 +33,11 @@ $conn->close();
 <body>
 
     <h2>Uuden oppilaan lisääminen</h2>
-    
-    <form action="" method="post">
+    <header>
+    <?php include "header.php" ?>
+    </header>
+    <br>
+    <form class="oppilas_lisaus" action="" method="post">
         <label for="nimi">Nimi:</label><br>
         <input type="text" id="nimi" name="nimi" required><br><br>
 
@@ -51,9 +49,11 @@ $conn->close();
 
         <input type="submit" value="Lisää oppilas">
     </form>
-    <form action="index.php" method="GET">
+    <form class="oppilas_lisaus" action="index.php" method="GET">
         <button type="submit">Takaisin</button>
     </form>
+
+    <?php include "footer.php" ?>
 
 </body>
 </html>
