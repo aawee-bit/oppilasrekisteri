@@ -46,7 +46,8 @@
         if ($result->num_rows > 0) {
             while($row = $result->fetch_assoc()) {
                 echo "<tr>";
-                echo "<td>" . htmlspecialchars($row['nimi']);
+                echo "<td>" . htmlspecialchars($row['nimi']) .
+                "<a class='edit' href='update_form.php?id=" . urlencode($row['id']) . "&field=nimi'>Muokkaa</a></td>";
                 echo "<td>" . htmlspecialchars($row['sahkoposti']) . "</td>";
                 echo "<td>" . htmlspecialchars($row['luokka']) . "</td>";
                 echo "</tr>";
