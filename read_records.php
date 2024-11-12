@@ -64,7 +64,7 @@ if ($result === false) {
             echo "<tr>";
 
             echo "<td>" . htmlspecialchars($row['nimi']) .
-            "<a class='edit' href='updateform.php?id=" . urlencode($row['id']) . "&field=nimi'>Muokkaa</a></td>";
+            "<a class='edit' href='update_form.php?id=" . urlencode($row['id']) . "&field=nimi'>Muokkaa</a></td>";
 
             echo "<td>" . htmlspecialchars($row['sahkoposti']) . "</td>";
             echo "<td>" . htmlspecialchars($row['luokka']) . "</td>";
