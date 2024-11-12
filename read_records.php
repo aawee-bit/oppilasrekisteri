@@ -2,7 +2,7 @@
 $host = 'localhost';
 $dbname = 'oppilasrekisteri';
 $username = 'root';              
-$password = '';         // Jos Xampilla niin jätä tyhjäksi, uWampilla "root"
+$password = 'root';         // Jos Xampilla niin jätä tyhjäksi, uWampilla "root"
 
 $conn = new mysqli($host, $username, $password, $dbname);
 $conn->set_charset('utf8mb4');
