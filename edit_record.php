@@ -1,14 +1,9 @@
 <?php
 include "config.php";
 
-$id = 1000;
-$nimi = "storyofundertale";
-$luokka = "skibiid";
-
 if (empty($id)) {   // jos opiskelijaa ei valittu
     echo "Sinun pitää valita oppilas jota muokata";
 } else {
-WHERE EXIS
     if (empty($nimi)) {         // nimi
         echo "Nimi oli tyhjä, ei päivitetty.";  // jos käyttäjä ei täyttänyt nimi kohtaan mitään
     } else {
