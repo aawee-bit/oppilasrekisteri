@@ -1,14 +1,6 @@
 <?php
-$dbServername = "localhost";
-$dbUsername = "root";
-$dbPassword = "root";
-$dbName = "oppilasrekisteri";
 
-$conn = new mysqli($dbServername, $dbUsername, $dbPassword, $dbName);
-
-if ($conn->connect_error) {
-    die("Yhteyden muodostaminen epäonnistui: " . $conn->connect_error);
-}
+include "db_connection.php";
 
 if (isset($_GET['id']) && isset($_POST['vahvistus']) && $_POST['vahvistus'] == 'joo') {
     $id = $_GET['id'];
