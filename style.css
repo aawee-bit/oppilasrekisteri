@@ -95,6 +95,14 @@ nav.header a:active {
 }
 
 
+.oppilas_lisaus{
+    width: 100%;
+    margin: 0px auto;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
 @media (max-width: 768px) {
     nav.header {
         flex-direction: column;
