@@ -1,14 +1,6 @@
 <?php
-$dbServername = "localhost";
-$dbUsername = "root";
-$dbPassword = "root";
-$dbName = "oppilasrekisteri";
 
-$conn = new mysqli($dbServername, $dbUsername, $dbPassword, $dbName);
-
-if ($conn->connect_error) {
-    die("Yhteyden muodostaminen epäonnistui: " . $conn->connect_error);
-}
+include "db_connection.php";
 
 $sql = "SELECT id, nimi FROM oppilaat";
 $result = $conn->query($sql);
@@ -19,21 +11,30 @@ $result = $conn->query($sql);
 <html lang="fi">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oppilaslista</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Oppilaslista</h1>
-    <ul>
+    <h2>Oppilaslista</h2>
+    <header>
+    <?php include "header.php"?>
+    <?php include "footer.php"?>
+    </header>
+    <table>
+    <tr>
+        <th>Nimi</th>
+        <th>Poista</th>
+    </tr>
         <?php
         if ($result->num_rows > 0) {
             while($row = $result->fetch_assoc()) {
-                echo "<li>" . htmlspecialchars($row['nimi']) . " ";
-                echo "<a href='delete_confirm.php?id=" . $row['id'] . "'>Poista</a>";
-                echo "<li>";
+                echo "<td>" . htmlspecialchars($row['nimi']) . "</td>";
+                echo "<td>" . "<a href='delete_confirm.php?id=" . $row['id'] . "'>Poista</a></td>";
+                echo "</tr>";
             }
         } else {
-            echo "Ei oppilaita tietokannassa.";
+            echo "<tr><td colspan='3'>Ei oppilaita tietokannassa.</td></tr>";
         }
         ?>
     </ul>
