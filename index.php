@@ -3,20 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Oppilasrekisteri</title>
 </head>
 <body>
     <h1>Oppilasrekisteri</h1>
 
     <header>
-    <nav class="header">
-
-    <a href="read_records.php">Oppilasrekisteri</a>
-    <a href="create_form.php">Lisää Oppilas</a>
-    <a href="updateform.php">Hallinnoi tilejä</a>
-    <a href="delete_record.php">Poista tilejä</a>
-
-</nav>
+    <?php include "header.php"?>
+    <?php include "footer.php"?>
     </header>
 </body>
 </html>

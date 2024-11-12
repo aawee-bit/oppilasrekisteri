@@ -86,7 +86,13 @@ nav.header a:active {
     transform: translateY(0px);
 }
 
-
+.alaosa{
+    position: fixed;
+    width: 100%;
+    align-content: center;
+    text-align: center;
+    bottom: 0px;
+}
 
 
 @media (max-width: 768px) {
