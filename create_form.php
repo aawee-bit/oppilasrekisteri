@@ -1,0 +1,55 @@
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "oppilaat";
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+if ($conn->connect_error) {
+    die("Yhteyden muodostaminen epäonnistui: " . $conn->connect_error);
+}
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $nimi = $_POST['nimi'];
+    $sahkoposti = $_POST['sahkoposti'];
+    $luokka = $_POST['luokka'];
+
+    $sql = "INSERT INTO oppilaat (nimi, sahkoposti, luokka) VALUES ('$nimi', '$sahkoposti', '$luokka')";
+
+    if ($conn->query($sql) === TRUE) {
+        echo "Uusi oppilas lisätty rekisteriin!";
+    } else {
+        echo "Virhe: " . $sql . "<br>" . $conn->error;
+    }
+}
+
+$conn->close();
+?>
+
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lisää uusi oppilas</title>
+</head>
+<body>
+
+    <h2>Uuden oppilaan lisääminen</h2>
+    
+    <form action="" method="post">
+        <label for="nimi">Nimi:</label><br>
+        <input type="text" id="nimi" name="nimi" required><br><br>
+
+        <label for="sahkoposti">Sähköposti:</label><br>
+        <input type="email" id="sahkoposti" name="sahkoposti" required><br><br>
+
+        <label for="luokka">Luokka:</label><br>
+        <input type="text" id="luokka" name="luokka" required><br><br>
+
+        <input type="submit" value="Lisää oppilas">
+    </form>
+
+</body>
+</html>
