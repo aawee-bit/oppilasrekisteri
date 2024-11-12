@@ -7,4 +7,5 @@
     <a href="./create_form.php">Lisää Oppilas</a>
     <a href="./delete_record.php">Poista tilejä</a>
 
+    <a href="./password.php">Kirjaudu Sisään</a>
 </nav>
